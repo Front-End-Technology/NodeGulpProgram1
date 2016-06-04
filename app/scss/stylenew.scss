@@ -1,0 +1,30 @@
+// styles.scss
+.testing {
+  width: percentage(5/7);
+}
+
+$font-stack:    Corsiva, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+h1 {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+p {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+span {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
