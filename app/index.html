@@ -1,25 +1,45 @@
 <html>
 <head>
-	
+	 <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="js/lib/script.js"></script>
 	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/stylenew.css">
 	<!--endbuild-->
 	<!--build:js js/main.min.js -->
 	<script src="js/lib/subtract.js"></script>
 	<script src="js/lib/add.js"></script>
-	<script src="js/lib/divide.js"></script>
 	<!-- endbuild -->
 
 </head>
 <body>
-	<h1>This is my first node gulp program. </h1>
-	<h3> Hello babita12 Akshit</h3>
 	
-	<div>
-	<h1>This is my new code</h1>
-	</div><div>
-	<h1>This is my new code</h1>
-	</div>
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                   <h1 style="color:red"> My Website</h1>
+                </div>
+
+              
+            </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main" ng-app="scotchApp">
+
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+<div ng-view></div>
+        </div>
+
 </body>
 </html>
